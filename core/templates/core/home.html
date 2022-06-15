@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1 class="heading">SuperGym to cos więcej niż siłownia</h1>
+<p>Zaloguj się aby dostać się do panelu</p>
+<img src="{% static 'img/header.webp' %}" alt="header" style="width: 100%">
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Dlaczego my?</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+            <i class="fa-solid fa-wallet hd"></i>
+            <h2>Tanio</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                probably just keep going until we run out of words.</p>
+        </div>
+        <div class="feature col">
+            <i class="fa-solid fa-dumbbell hd"></i>
+            <h2>Najnowszy sprzęt</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                probably just keep going until we run out of words.</p>
+        </div>
+        <div class="feature col">
+            <i class="fa-solid fa-clock hd"></i>
+            <h2>Otwarte 24/7</h2>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and
+                probably just keep going until we run out of words.</p>
+        </div>
+    </div>
+    <div>
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Cennik</h1>
+            <p class="fs-5 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, perspiciatis repudiandae. Culpa rerum, reprehenderit id, qui tempora tempore minima, inventore repudiandae ullam porro in numquam dolore impedit nulla fuga? Corrupti!</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Początkujący</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$3<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Dołącz</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Początkujący</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$7<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Dołącz</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Zaawansowany</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$10<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>30 users included</li>
+                            <li>15 GB of storage</li>
+                            <li>Phone and email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Dołącz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <h2 class="display-6 text-center mb-4">Różnice subskrypcji</h2>
+    
+        <div class="table-responsive">
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th style="width: 34%;"></th>
+                        <th style="width: 22%;">Student</th>
+                        <th style="width: 22%;">Początkujący</th>
+                        <th style="width: 22%;">Zaawansowany</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start">Public</th>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Private</th>
+                        <td></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                </tbody>
+    
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-start">Permissions</th>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Sharing</th>
+                        <td></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Unlimited members</th>
+                        <td></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-start">Extra security</th>
+                        <td></td>
+                        <td></td>
+                        <td><i class="fa-solid fa-check"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock content %}

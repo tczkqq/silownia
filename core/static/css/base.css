@@ -1,0 +1,16 @@
+:root{
+    --main: #ff5200;
+}
+
+.navbar-brand {
+    color: var(--main) !important;
+}
+
+.hd {
+    color: var(--main);
+    font-size: 3rem;
+}
+
+#main {
+    margin-top: 100px;
+}
