@@ -17,17 +17,24 @@
         <tr>
             <th>Usługa</th>
             <th>Koszt</th>
-            <th>Status</th>
+            <th>Akcja</th>
             
         </tr>
         </thead>
         <tbody>
+            {% for service in services %}
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td> {{ service.name }}</td>
+            <td> {{ service.price }} </td>
+            <td>
+                <a href="{% url 'core:add_service' id=service.id %}"> 
+                    <button class="btn btn-success">Aktywuj</button>
+                </a>
+            </td>
+                
+            
         </tr>
+            {% endfor  %}
         </tbody>
     </table>
     </div>

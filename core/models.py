@@ -17,6 +17,9 @@ class UserService(models.Model):
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
     active = models.BooleanField(default=True)
     
+    def __str__(self) -> str:
+        return f"{self.client} -> {self.service} | {'aktywny' if self.active else 'nieaktywny'}"
+    
 
 class PaymentMethods(models.Model):
     name = models.CharField(max_length=50)
@@ -33,6 +36,8 @@ class Payments(models.Model):
     payed = models.IntegerField(default=0)
     realized = models.BooleanField(default=False)
     
+    def __str__(self) -> str:
+        return f"{self.date} | {self.client} zapłacił {self.payed} PLN"
 
 class Messages(models.Model):
     employee = models.ForeignKey(User, on_delete=models.CASCADE, related_name='employee')
