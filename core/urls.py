@@ -1,7 +1,10 @@
 from django.urls import path
 from . import views
+from django.contrib import admin
 
 app_name = 'core'
+
+admin.site.site_header = 'SuperGym'
 
 urlpatterns = [
     path('', views.home_view, name='home'),

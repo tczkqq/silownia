@@ -1,6 +1,7 @@
 from django.shortcuts import redirect, render, HttpResponse
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import get_user_model
 
 from .models import PaymentMethods, Payments, Service, UserService
 
@@ -24,7 +25,11 @@ def panel(request):
 
 @staff_member_required
 def staff_panel_view(request):
-    context = {}
+    User = get_user_model()
+    users = User.objects.all()
+    context = {
+        'users': users
+    }
     return render(request, 'core/staff_panel.html', context)
 
 @login_required
